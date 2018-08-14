@@ -15,5 +15,5 @@ This need to connect to maria db server
 So change database parameters in config/config.json file
 run ./commands.sh file
 
-
+enter following command to test:
 curl -H 'Content-Type: application/json' -d '{"req":{"q": "chicken","appKey":"APP_KEY","appId":"APP_ID"}}' "http://localhost:8080/gateway/search"
