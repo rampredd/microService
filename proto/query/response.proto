@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+package microService.proto.query;
+
+message Response {
+	string response = 1;
+}	

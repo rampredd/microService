@@ -1,0 +1,15 @@
+syntax = "proto3";
+import "microService/proto/query/request.proto";
+import "microService/proto/query/response.proto";
+
+service Business {
+rpc Search(BusinessRequest) returns (BusinessResponse) {}
+}
+
+message BusinessRequest{
+microService.proto.query.Request req = 1;
+}
+
+message BusinessResponse{
+microService.proto.query.Response rsp = 1;
+}

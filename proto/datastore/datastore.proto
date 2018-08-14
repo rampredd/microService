@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "microService/proto/query/request.proto";
+
+service Datastore {
+rpc Search(DatastoreRequest) returns (DatastoreResponse) {}
+rpc Save(SaveRequest) returns (SaveResponse) {}
+}
+
+
+message DatastoreRequest{
+microService.proto.query.Request req = 1;
+}
+
+message SaveRequest{
+microService.proto.query.Request req = 1;
+	string recipe = 2;
+}
+
+message SaveResponse{
+	string rsp = 1;
+}
+
+message DatastoreResponse{
+	string rsp = 1;
+}

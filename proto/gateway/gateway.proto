@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "microService/proto/query/request.proto";
+import "microService/proto/query/response.proto";
+
+service Gateway {
+rpc Search(QueryRequest) returns (QueryResponse) {}
+}
+
+message QueryRequest{
+microService.proto.query.Request req = 1;
+}
+
+message QueryResponse{
+microService.proto.query.Response rsp = 1;
+}

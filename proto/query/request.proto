@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package microService.proto.query;
+
+// request message structure
+message Request {
+	string q= 1;
+	string r = 2;
+	int32 from = 3;
+	int32 to = 4;
+	string ingr = 5;
+
+enum Diet {
+	UNKNOWN_DIET=0;
+	BALANCED=1;
+	HIGHPROTIEN=2;
+	HIGHFIBER=3;
+}
+Diet diet = 6;
+enum Health {
+	UNKNOWN_HEALTH=0;
+	PEANUTFREE=1;
+	TREENUTFREE=2;
+}
+	Health health = 7;
+	string calories = 8;
+}

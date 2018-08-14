@@ -1,0 +1,16 @@
+{
+	"config": {
+		"app": {
+			"appKey": "YOUR_APP_KEY",
+			"appId": "YOUR_APP_ID"
+		},
+        "db": {
+            "address": "127.0.0.1",
+            "port": 3306,
+            "username": "root",
+            "password": "abc123",
+			"dbName": "db",
+			"tableName": "tb1"
+        }
+	}
+}
