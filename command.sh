@@ -5,14 +5,14 @@ GATEWAY="MICRO_REGISTRY=mdns go run gateway/gateway.go &"
 BUSINESS="MICRO_REGISTRY=mdns go run business/business.go &"
 DATASTORE="MICRO_REGISTRY=mdns go run datastore/datastore.go &"
 
-#echo "starting NATS server "
-#eval $NATSRV
-#sleep 1
-#echo "started NATS server"
-#echo "starting micro api"
-#eval $MICROAPI
-#sleep 1
-#echo "started micro api"
+echo "starting NATS server "
+eval $NATSRV
+sleep 1
+echo "started NATS server"
+echo "starting micro api"
+eval $MICROAPI
+sleep 1
+echo "started micro api"
 echo "starting gateway"
 eval $GATEWAY
 sleep 1
