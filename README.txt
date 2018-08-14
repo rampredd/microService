@@ -1,3 +1,5 @@
+This works in linux machine only
+
 PLEASE SET GOPATH AND GOROOT env variables
 
 cd GOPATH/src
